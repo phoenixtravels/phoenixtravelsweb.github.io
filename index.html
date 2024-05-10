@@ -4,62 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Travels NZ Ltd</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
             height: 100%;
             margin: 0;
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            background-color: #005792;
-            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7fa; /* Light grey background */
+            color: #333; /* Dark text for readability */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .header {
             text-align: center;
-            position: absolute;
-            top: 10%;
-            left: 50%;
-            transform: translateX(-50%);
+            padding: 2% 0;
+            background-color: #1f1f1f; /* Dark background for header */
+            color: #fff;
         }
         .header h1 {
-            font-weight: 600;
-            font-size: 3em;
+            font-weight: 700;
+            font-size: 2.5em;
             margin: 0;
         }
         .guarantee {
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-        }
-        .guarantee h2 {
+            text-align: center;
+            padding: 1% 0;
+            background-color: #4a90e2; /* Blue background for subtitle */
+            color: #fff;
             font-weight: 400;
-            font-size: 2em;
-            background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 50%, rgba(189,255,0,1) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: rainbow-text 5s infinite;
-        }
-        @keyframes rainbow-text {
-            0%, 100% {
-                filter: hue-rotate(0deg);
-            }
-            50% {
-                filter: hue-rotate(-360deg);
-            }
+            font-size: 1.5em;
         }
         .open-hours {
             text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%);
             font-size: 1.5em;
+            color: #4a90e2; /* Blue text to match the subtitle */
+            padding: 5% 0;
             animation: blinker 1.5s linear infinite;
-            color: #f57c00;
         }
         @keyframes blinker {
             50% {
@@ -67,27 +48,32 @@
             }
         }
         .contact-details {
-            position: absolute;
-            bottom: 20%;
-            width: 100%;
             display: flex;
             justify-content: space-around;
-            padding: 0 10%;
+            align-items: center;
+            padding: 2% 5%;
+            background-color: #e8e8e8; /* Light grey background for contact details */
         }
-        .contact-details .address {
-            text-align: left;
-            font-size: 1em;
-        }
-        .contact-details .contact-info {
-            text-align: right;
+        .contact-details div {
+            text-align: center;
             font-size: 1em;
         }
         .contact-info a {
-            color: #f57c00;
+            color: #4a90e2; /* Blue text for links */
             text-decoration: none;
+            font-weight: 400;
         }
         .contact-info a:hover {
             text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .contact-details {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-details div {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -96,7 +82,7 @@
         <h1>Phoenix Travels NZ Ltd</h1>
     </div>
     <div class="guarantee">
-        <h2>Lowest Price Guaranteed</h2>
+        Lowest Price Guaranteed
     </div>
     <div class="open-hours">
         Open 24 hours
