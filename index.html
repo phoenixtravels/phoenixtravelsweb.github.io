@@ -6,34 +6,44 @@
     <title>Phoenix Travels NZ Ltd</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f3f3f3;
+            background-color: #e9eff1;
             color: #333;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
-        h1 {
-            color: #d32f2f;
+        header {
+            background-color: #005792;
+            color: #fff;
+            padding: 10px 0;
+            border-radius: 8px 8px 0 0;
             text-align: center;
         }
-        h2 {
-            color: #f57c00;
+        header h1 {
+            margin: 0;
+        }
+        .guarantee {
+            background-color: #00a8e8;
+            color: #fff;
+            padding: 5px;
             text-align: center;
-            margin-bottom: 20px;
+            border-radius: 0 0 8px 8px;
         }
         .contact-info {
             text-align: center;
             margin: 20px 0;
         }
         .contact-info p {
-            margin: 5px 0;
+            margin: 10px 0;
         }
         .contact-info a {
             color: #d32f2f;
@@ -42,12 +52,21 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Phoenix Travels NZ Ltd</h1>
-        <h2>Lowest Price Guaranteed</h2>
+        <header>
+            <h1>Phoenix Travels NZ Ltd</h1>
+        </header>
+        <div class="guarantee">
+            <h2>Lowest Price Guaranteed</h2>
+        </div>
         <div class="contact-info">
             <p>Open 24 hours</p>
             <p>146 Oxford Terrace, Epuni, Lower Hutt, Wellington, New Zealand</p>
