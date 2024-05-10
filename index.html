@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix Travels NZ Ltd</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body, html {
             height: 100%;
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #f5f7fa; /* Light grey background */
-            color: #333; /* Dark text for readability */
+            background-color: #f5f7fa;
+            color: #333;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -19,7 +20,7 @@
         .header {
             text-align: center;
             padding: 2% 0;
-            background-color: #1f1f1f; /* Dark background for header */
+            background-color: #1f1f1f;
             color: #fff;
         }
         .header h1 {
@@ -30,7 +31,7 @@
         .guarantee {
             text-align: center;
             padding: 1% 0;
-            background-color: #4a90e2; /* Blue background for subtitle */
+            background-color: #4a90e2;
             color: #fff;
             font-weight: 400;
             font-size: 1.5em;
@@ -38,7 +39,7 @@
         .open-hours {
             text-align: center;
             font-size: 1.5em;
-            color: #4a90e2; /* Blue text to match the subtitle */
+            color: #4a90e2;
             padding: 5% 0;
             animation: blinker 1.5s linear infinite;
         }
@@ -52,26 +53,35 @@
             justify-content: space-around;
             align-items: center;
             padding: 2% 5%;
-            background-color: #e8e8e8; /* Light grey background for contact details */
+            background-color: #e8e8e8;
         }
         .contact-details div {
             text-align: center;
             font-size: 1em;
         }
-        .contact-info a {
-            color: #4a90e2; /* Blue text for links */
+        .contact-info a, .social-links a {
+            color: #4a90e2;
             text-decoration: none;
             font-weight: 400;
+            margin: 0 10px;
         }
-        .contact-info a:hover {
+        .contact-info a:hover, .social-links a:hover {
             text-decoration: underline;
+        }
+        .social-links {
+            text-align: center;
+            padding: 2% 0;
+            background-color: #1f1f1f;
+        }
+        .social-links i {
+            font-size: 1.5em;
         }
         @media (max-width: 768px) {
             .contact-details {
                 flex-direction: column;
                 text-align: center;
             }
-            .contact-details div {
+            .contact-details div, .social-links a {
                 margin: 10px 0;
             }
         }
@@ -95,6 +105,12 @@
             <p>Email: <a href="mailto:sales@phoenixtravelnz.com">sales@phoenixtravelnz.com</a></p>
             <p>Phone: <a href="tel:+64220433716">+64 22 043 3716</a></p>
         </div>
+    </div>
+    <div class="social-links">
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/yourfacebookpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/yourinstagramhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/yourtwitterhandle" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
 </body>
 </html>
